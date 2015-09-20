@@ -1,2 +1,7 @@
+# Meteor
 .meteor/local
 .meteor/meteorite
+
+# IntelliJ/WebStorm/etc
+.idea/
+.idea_modules/
