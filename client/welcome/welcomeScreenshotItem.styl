@@ -1,0 +1,39 @@
+.welcomeScreenshotItem
+  line-height: 0
+  margin-top: 16px
+  margin-bottom: 16px
+  background-color: white
+
+  >div
+    position: relative
+    padding-top: 75%
+    overflow: hidden
+    transition all 200ms ease-in-out
+    &:hover
+      -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      -ms-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+  img
+    position: absolute;
+    top: 0
+    width: 100%
+    opacity: 0
+    -webkit-transition: opacity 500ms
+    -moz-transition: opacity 500ms
+    -ms-transition: opacity 500
+    transition: opacity 500ms
+
+    &.loaded
+      opacity 1
+
+  .colorsList
+    text-align: center
+
+  .circle
+    width: 34px
+    height: 34px
+    margin: 8px
+    display: inline-block
+    border-radius: 50%

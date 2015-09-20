@@ -1,0 +1,20 @@
+<template name="welcome">
+    <section class="section welcomeInputContainer light-green lighten-5 z-depth-1">
+        <div class="container">
+            <div class="input-field center col m9">
+                <form>
+                    <input id="url" type="text">
+                    <label for="url">Your URL</label>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcomeScreenshotsContainer row">
+        {{#each urls}}
+            <div class="col l4 m6 s12">
+                {{> welcomeScreenshotItem}}
+            </div>
+        {{/each}}
+    </section>
+</template>

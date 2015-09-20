@@ -1,0 +1,14 @@
+<template name="default">
+
+    <div class="page" >
+        {{> defaultHeader}}
+
+        <div class="pageContent transition-container">
+            {{> yield}}
+        </div>
+    </div>
+
+    {{#if useAnalytics}}
+        {{> analytics}}
+    {{/if}}
+</template>

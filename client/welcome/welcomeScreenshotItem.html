@@ -1,0 +1,13 @@
+<template name="welcomeScreenshotItem">
+    <div class="welcomeScreenshotItem">
+        <div class="z-depth-1">
+            <img class="image" src="{{imageUrl}}">
+        </div>
+        <ul class="colorsList">
+            {{#each paletteItems}}
+                <li class="circle" style="background-color: rgb({{rgb}})">
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</template>
