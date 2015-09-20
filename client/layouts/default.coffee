@@ -5,4 +5,4 @@ Template.default.onRendered ->
 
 Template.default.helpers
   useAnalytics: ->
-    window.location.hostname == 'paletron.appeine.com'
+    window.location.hostname == 'paletron.appeine.com' and Meteor.settings.public.ga.id
