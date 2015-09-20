@@ -44,6 +44,8 @@ Router.route '/api', ->
   where: 'server'
 
 processImage = (response, imageUrl, buffer) =>
+  Vibrant = Meteor.npmRequire('node-vibrant')
+
   v = new Vibrant buffer, {}
   v.getSwatches (err, rawPalette) =>
     palette = {}

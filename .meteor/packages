@@ -9,9 +9,12 @@ coffeescript
 stylus
 jquery
 iron:router
-appeine:vibrant
 reactive-var
 materialize:materialize@=0.97.0
 aldeed:http
 http
 meteorhacks:kadira
+meteorhacks:npm
+
+
+npm-container
