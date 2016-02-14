@@ -20,14 +20,12 @@ Router.route '/api', ->
   # We don't redirect automatically so that we can capture the location header
   HTTP.call 'GET', zaprUrl, options, (err, data) =>
     if err
-      @response.writeHead 500, {}
+      @response.writeHead 500
       @response.end 'An internal error occurred'
 
     imageUrl = data.headers.location
 
-    if data.statusCode == 200
-      processImage @response, imageUrl, data.content
-    else if data.statusCode == 302
+    if data.statusCode == 302
       options =
         responseType: 'buffer'
 
@@ -38,7 +36,7 @@ Router.route '/api', ->
 
         processImage @response, imageUrl, data.content
     else
-      @response.writeHead 500, {}
+      @response.writeHead 500
       @response.end 'An internal error occurred'
 ,
   where: 'server'
